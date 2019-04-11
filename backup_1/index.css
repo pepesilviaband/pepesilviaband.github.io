@@ -1,0 +1,161 @@
+:root {
+    --main-color: #f0f6eb;
+    --secondary-color: #c4d3b7;
+    --main-color: #bed584;
+    --secondary-color: #a2bb62;
+    --main-color: #b6dd59;
+    --secondary-color: #8eb13b;
+    --main-color: #bbe04a;
+    --secondary-color: #869e3b;
+    --main-color: #b8d85a;
+    --secondary-color: #869e3b;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: Comfortaa, arial, sans-serif;
+    background-color: var(--main-color);
+    color: white;
+/*    color: #3d4e45;*/
+}
+.nav {
+    
+}
+.body > .logo_area {
+    text-align: center;
+    padding: 190px 15px;
+    font-size: 75px;
+    color: #f0f6eb;
+    background: url(./media/img/cover.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #21212B;
+    font-family: 'Amatic SC', cursive;
+    transition: text-shadow 0.2s, color 0.2s;
+    box-shadow: inset 0px -5px 15px rgba(0, 0, 0, 0.5);
+}
+.body > .logo_area > .logo {
+    transition: text-shadow 0.1s, transform 0.1s;
+    transform: translateY(0px) scale(1);
+    display: inline-block;
+    font-weight: bold;
+}
+.body > .logo_area > .logo:hover {
+    -webkit-text-stroke: 1px white;
+/*    color: rgba(0, 0, 0, 0.7);*/
+    color: var(--secondary-color);
+    text-shadow: 0px 0px 25px black, 0px 0px 10px black;
+    transform: translateY(-3px) scale(1.05);
+}
+.body > .contents {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px calc(50vw - 350px);
+    padding-bottom: 50px;
+}
+.body > .contents > .events > .header {
+    font-size: 30px;
+    margin: 30px;
+    text-align: center;
+    font-family: "Special Elite";
+    font-size: 46px;
+}
+.body > .contents > .events > .header > .container {
+    display: inline-block;
+}
+.body > .contents > .events > .header > .container > .tag {
+    display: inline-block;
+    background: #ded77c;
+    padding: 20px 10px 10px;
+    border-radius: 10px;
+    border: 2px solid #cac36d;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2), 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.14s;
+    background-image: linear-gradient(#ded77c, #d5cd63);
+    background-image: linear-gradient(#faf396, #e6de78);
+/*    transform-origin: 32px center;*/
+}
+.body > .contents > .events > .header > .container:hover > .tag {
+    transform: rotate(-3deg);
+    box-shadow: -0.2px 2.2px 10px rgba(0, 0, 0, 0.2), -0.2px 2.2px 4px rgba(0, 0, 0, 0.2);
+}
+.body > .contents > .events > .header > .container > .tag::before {
+    content: " ";
+    width: 22px;
+    height: 22px;
+    margin: 0px 10px 0px 6px;
+    display: inline-block;
+    background: var(--main-color);
+    border-radius: 50%;
+    box-shadow: inset 0px 2px 10px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #cac36d;
+}
+.body > .contents > .events > .event {
+    padding: 15px 5px;
+    border-top: white 1px solid;
+    background-color: transparent;
+}
+.body > .contents > .events > .event:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.body > .contents > .events > .event > .eventDetails {
+    display: flex;
+    justify-content: space-between;
+}
+.body > .contents > .events > .event > .eventDate {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.body > .contents > .events > .event .eventName {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+.body > .contents > .events > .event .eventPlace {
+    display: inline-block;
+    vertical-align: top;
+}
+.body > .footer {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: var(--secondary-color);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.body > .footer img {
+    height: 45px;
+    margin: 0px 20px;
+    padding: 4px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.24s, transform 0.24s;
+}
+.body > .footer img:hover {
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px);
+}
+@media only screen and (max-width: 900px) {
+    .body > .logo_area {
+        padding: 150px 20px;
+    }
+    .body > .contents {
+        padding: 0px 120px;
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .body > .logo_area {
+        padding: 150px 20px;
+    }
+    .body > .contents > .events > .event .eventName {
+        width: 90%;
+    }
+    .body > .contents > .events > .event .eventPlace {
+        width: 90%;
+    }
+}

@@ -1,0 +1,48 @@
+:root {
+    --main-color: #f0f6eb;
+    --secondary-color: #c4d3b7;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: Comfortaa, arial, sans-serif;
+    background-color: #f0f6eb;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.logo a {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    text-decoration: none;
+    color: black;
+    box-sizing: content-box;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+.logo a:hover {
+    border-bottom: 3px solid black;
+}
+.body {
+    padding: 50px calc(50vw - 350px);
+    display: flex;
+    align-items: baseline;
+}
+.body > .contents {
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+@media only screen and (max-width: 900px) {
+    .body {
+        padding: 50px 120px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .body {
+        padding: 50px 60px;
+    }
+}
